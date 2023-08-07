@@ -4,7 +4,7 @@
 %% initilization
 clear all;close all;clc;
 metrics={'GretnaSFCMatrixZ'}; % change it accordingly
-[xlsfile,xlspath,FILTERINDEX]=uigetfile('*.xlsx','information xlsx');%['J:\XIUQIN\排除被试名单（分中心）\']
+[xlsfile,xlspath,FILTERINDEX]=uigetfile('*.xlsx','info_for_combat_20210607(1)');%['J:\XIUQIN\排除被试名单（分中心）\']
 Path=uigetdir('E:\data\116\FC_No_Combat','choose folder contains all the centers');%
 pathout=uigetdir('E:\data\116\FC_Combat','choose output folder');%
 centers=dir(Path); centers=centers(3:end,:);
