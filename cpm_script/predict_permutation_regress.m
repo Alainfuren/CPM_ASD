@@ -14,7 +14,7 @@ load panas_score.txt; all_behav = panas_score(:,1);
 no_sub = size(all_mats,3);
 thresh = 0.001;
 
-%同时用正、负连边的FC之和来预测量表得分
+
 [true_prediction_r, consensus_feature] = predict_behavior_regress(all_mats, all_behav,thresh);
 
 no_iteration = 1000;
