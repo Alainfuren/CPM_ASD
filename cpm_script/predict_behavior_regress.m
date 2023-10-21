@@ -32,7 +32,6 @@ for leftout = 1:no_sub
         train_sumneg(ss) = sum(sum(train_mats(:,:,ss).*neg_mask))/2;
     end
 
-    %同时用正、负显著连边的FC之和来预测量表得分
     b = regress(train_behav,[train_sumpos, train_sumneg, ones(no_sub-1,1)]);
     
     test_mat = all_mats(:,:,leftout);
